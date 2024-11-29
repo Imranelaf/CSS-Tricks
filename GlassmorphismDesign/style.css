@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./image/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.slogan{
+    width: fit-content;
+    height: fit-content;
+    border: 1px black solid;
+    padding: 4rem 7rem;
+}
+
+.slogan h2{
+    letter-spacing: 2px;
+    font-size: xx-large;
+}
+
+/* Level 1: Adding a simple glassmorphism effect with only a blurred background
+
+.slogan{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+}
+
+*/
+
+/* Level 2: Adding a gradient overlay to the glassmorphism effect */
+
+.slogan{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(120deg,rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.4));
+}
+
+
+
+
